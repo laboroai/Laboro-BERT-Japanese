@@ -1,0 +1,3 @@
+.DS_Store
+model/webcorpus*/**
+!.gitkeep
