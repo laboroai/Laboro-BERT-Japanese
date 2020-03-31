@@ -55,11 +55,11 @@ For Driving-domain QA task:
 We haven't published any paper on this work.
 Please cite this repository:
 ```
-@article{未定,
-  title = {LaboroBERT: Japanese BERT Pre-Trained With Web-Corpus},
-  author = {未定},
+@article{Laboro BERT,
+  title = {Laboro BERT: Japanese BERT Pre-Trained With Web-Corpus},
+  author = {Laboro.AI},
   year = {2020},
-  howpublished = {\url{未定}}
+  howpublished = {\url{https://github.com/laboroai/japanese-webcorpus-bert}}
 }
 ```
 
@@ -101,8 +101,8 @@ Before running the code, make sure
 * the sentencepiece model is also in the model folder, including webcorpus.model, webcorpus.vocab
 
 ```bash
-git clone 未定
-cd 未定/src
+git clone https://github.com/laboroai/japanese-webcorpus-bert.git
+cd ./japanese-webcorpus-bert/src
 ./run_classifier.sh
 ```
 
@@ -135,8 +135,8 @@ TPU is recommended for this evaluation, and [TPU can only read from and write to
 * the sentencepiece model is in the **local** model folder, including webcorpus.model, webcorpus.vocab
 
 ```bash
-git clone 未定
-cd 未定/src
+git clone https://github.com/laboroai/japanese-webcorpus-bert.git
+cd ./japanese-webcorpus-bert/src
 ./run_squad.sh
 ```
 
