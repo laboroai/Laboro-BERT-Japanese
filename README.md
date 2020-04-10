@@ -80,7 +80,7 @@ Text classification means assigning labels to text. Because the labels can be de
 
 #### Dataset - Livedoor News Corpus
 
-In the evaluation of English BERT model in classification task, several datasets (e.g. SST-2, MRPC) can be used as common benchmarks. As for Japanese BERT model, [Livedoor new corpus](https://www.rondhuit.com/download.html#ldcc) can be used in the same fashion. Each piece of news in this corpus can be classified into one of the nine categories.
+In the evaluation of English BERT model in classification task, several datasets (e.g. SST-2, MRPC) can be used as common benchmarks. As for Japanese BERT model, [Livedoor news corpus](https://www.rondhuit.com/download.html#ldcc) can be used in the same fashion. Each piece of news in this corpus can be classified into one of the nine categories.
 
 The original corpus is not devided in training, evaluation, and testing data. The dataset we provided in this repository was pre-processed based on Livedoor News Corpus in following steps: 
 * concatenating all of the data
