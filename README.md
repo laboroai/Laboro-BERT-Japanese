@@ -1,4 +1,4 @@
-# Japanese BERT Pre-Trained With Web-Corpus
+# Laboro BERT Japanese: Japanese BERT Pre-Trained With Web-Corpus
 
 <!-- TOC -->
 
@@ -58,16 +58,19 @@ For Driving-domain QA task:
 We haven't published any paper on this work.
 Please cite this repository:
 ```
-@article{Laboro BERT,
-  title = {Laboro BERT: Japanese BERT Pre-Trained With Web-Corpus},
-  author = {Laboro.AI},
+@article{Laboro BERT Japanese,
+  title = {Laboro BERT Japanese: Japanese BERT Pre-Trained With Web-Corpus},
+  author = {"Zhao, Xinyi and Hamamoto, Masafumi and Fujihara, Hiromasa"},
   year = {2020},
   howpublished = {\url{https://github.com/laboroai/japanese-webcorpus-bert}}
 }
 ```
 
 ### License
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></br>
+
+   This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.  
+   For commercial use, please [contact Laboro.AI Inc.](https://laboro.ai/contact/other/)
 
 ## Fine-Tuning with Our Model
 
