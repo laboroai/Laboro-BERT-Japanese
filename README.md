@@ -62,7 +62,7 @@ Please cite this repository:
   title = {Laboro BERT Japanese: Japanese BERT Pre-Trained With Web-Corpus},
   author = {"Zhao, Xinyi and Hamamoto, Masafumi and Fujihara, Hiromasa"},
   year = {2020},
-  howpublished = {\url{https://github.com/laboroai/japanese-webcorpus-bert}}
+  howpublished = {\url{https://github.com/laboroai/Laboro-BERT-Japanese}}
 }
 ```
 
@@ -107,8 +107,8 @@ Before running the code, make sure
 * the sentencepiece model is also in the model folder, including webcorpus.model, webcorpus.vocab
 
 ```bash
-git clone https://github.com/laboroai/japanese-webcorpus-bert.git
-cd ./japanese-webcorpus-bert/src
+git clone https://github.com/laboroai/Laboro-BERT-Japanese.git
+cd ./Laboro-BERT-Japanese/src
 ./run_classifier.sh
 ```
 
@@ -141,8 +141,8 @@ TPU is recommended for this evaluation, and [TPU can only read from and write to
 * the sentencepiece model is in the **local** model folder, including webcorpus.model, webcorpus.vocab
 
 ```bash
-git clone https://github.com/laboroai/japanese-webcorpus-bert.git
-cd ./japanese-webcorpus-bert/src
+git clone https://github.com/laboroai/Laboro-BERT-Japanese.git
+cd ./Laboro-BERT-Japanese/src
 ./run_squad.sh
 ```
 
