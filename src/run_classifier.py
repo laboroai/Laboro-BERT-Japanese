@@ -17,9 +17,9 @@ import tokenization_sentencepiece as tokenization
 import modeling
 import optimization
 
-import cls_processor_m
-from cls_processor_m import LivedoorProcessor
-from cls_processor_m import NewProcessor
+import cls_processor
+from cls_processor import LivedoorProcessor
+from cls_processor import NewProcessor
 
 flags = tf.flags
 
