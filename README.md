@@ -36,9 +36,13 @@
 
 <!-- /TOC -->
 
-## Introduction {#introduction}
+<a name="introduction"></a>
 
-### About our BERT model {#about-our-bert-model}
+## Introduction 
+
+<a name="about-our-bert-model"></a>
+
+### About our BERT model 
 
 This Japanese BERT model was pre-trained with our own web corpus, on the basis of the [original BERT](https://github.com/google-research/bert) and this [Japanese BERT](https://github.com/yoheikikuta/bert-japanese). So far both base model (12-layer, 768-hidden, 12-heads, 110M parameters) and large model (24-layer, 1024-hidden, 16-heads, 340M parameters) pre-trained with the same web corpus have been released.
 
