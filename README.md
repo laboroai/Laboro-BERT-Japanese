@@ -189,7 +189,7 @@ TPU is recommended for this evaluation, and [TPU can only read from and write to
 ``` {.bash}
 git clone https://github.com/laboroai/Laboro-BERT-Japanese.git
 cd ./Laboro-BERT-Japanese/src
-./run_squad.sh
+./sh run_squad.sh
 ```
 
 <a name="about-the-pre-training-of-our-model"></a>
