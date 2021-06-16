@@ -51,7 +51,9 @@ Download the large model from [here](http://assets.laboro.ai.s3.amazonaws.com/la
 
 Please store either one of these models under the model folder.
 
-### How well is the performance {#how-well-is-the-performance}
+<a name="how-well-is-the-performance"></a>
+
+### How well is the performance 
 
 The models have been evaluated for two tasks, Livedoor news classification task and driving-domain question answering (DDQA) task. In Livedoor news classification, each piece of news is supposed to be classified into one of nine categories. In DDQA task, given question-article pairs, answers to the questions are expected to be found from the articles. The results of the evaluation are shown below, in comparison with a baseline model pre-trained with Japanese Wikipedia corpus released by this [Japanese BERT](https://github.com/yoheikikuta/bert-japanese) repository. Note that the results are the averages of multiple-time mearsurement. Due to the small size of the evaluation datasets, the results may differ a little every time.
 
@@ -71,7 +73,9 @@ For Driving-domain QA task:
 | Base       | Web Corpus   | 12G         | TPU             | 32         | 3     | 5e-5          | 100               | 75.5        | 5.06e-3            |
 | Large      | Web Corpus   | 12G         | TPU             | 32         | 3     | 5e-5          | 30                | 77.3        | 4.96e-3            |
 
-### To cite this work {#to-cite-this-work}
+<a name="to-cite-this-work"></a>
+
+### To cite this work 
 
 We haven't published any paper on this work. Please cite this repository:
 
@@ -82,20 +86,28 @@ We haven't published any paper on this work. Please cite this repository:
       howpublished = {\url{https://github.com/laboroai/Laboro-BERT-Japanese}}
     }
 
-### License {#license}
+<a name="license"></a>
+
+### License 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a></br>
 
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.\
 For commercial use, please [contact Laboro.AI Inc.](https://laboro.ai/contact/other/)
 
-## Fine-Tuning with Our Model {#fine-tuning-with-our-model}
+<a name="fine-tuning-with-our-model"></a>
 
-### Classification {#classification}
+## Fine-Tuning with Our Model 
+
+<a name="classification"></a>
+
+### Classification 
 
 Text classification means assigning labels to text. Because the labels can be defined to describe any aspect of the text, text classification has a wide range of application. The most straightforward one would be categorizing the topic or sentiment of the text. Besides those, other examples include recognizing spam email, judging whether two sentences have same or similar meaning.
 
-#### Dataset - Livedoor News Corpus {#dataset---livedoor-news-corpus}
+<a name="dataset---livedoor-news-corpus"></a>
+
+#### Dataset - Livedoor News Corpus 
 
 In the evaluation of English BERT model in classification task, several datasets (e.g. SST-2, MRPC) can be used as common benchmarks. As for Japanese BERT model, [Livedoor news corpus](https://www.rondhuit.com/download.html#ldcc) can be used in the same fashion. Each piece of news in this corpus can be classified into one of the nine categories.
 
@@ -142,11 +154,15 @@ cd ./Laboro-BERT-Japanese/src
 ./sh run_classifier.sh
 ```
 
-### Question Answering {#question-answering}
+<a name="question-answering"></a>
+
+### Question Answering 
 
 Question answering task is another way to evaluate and apply BERT model. In English NLP, [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) is one the of most widely used datasets for this task. In SQuAD, questions and corresponding Wikipedia pages are given, and the answers to the questions are supposed to be found from the Wikipedia pages.
 
-#### Dataset - Driving Domain QA {#dataset---driving-domain-qa}
+<a name="dataset---driving-domain-qa"></a>
+
+#### Dataset - Driving Domain QA 
 
 For QA task, we used [Driving Domain QA dataset](http://nlp.ist.i.kyoto-u.ac.jp/index.php?Driving%20domain%20QA%20datasets) for evaluation. This dataset consists of PAS-QA dataset and RC-QA dataset. So far, we have only evaluated our model on the RC-QA dataset. The dataset is already in the format of SQuAD 2.0, so no pre-processing is needed for further use.
 
@@ -176,15 +192,21 @@ cd ./Laboro-BERT-Japanese/src
 ./run_squad.sh
 ```
 
-## About the Pre-Training of Our Model {#about-the-pre-training-of-our-model}
+<a name="about-the-pre-training-of-our-model"></a>
 
-### Corpus {#corpus}
+## About the Pre-Training of Our Model 
+
+<a name="corpus"></a>
+
+### Corpus 
 
 Our Japanese BERT model is pre-trained with a web-based corpus especially built for this project. It was built by using a web crawler, and in total 2,605,280 webpages from 4,307 websites were crawled. The source websites extend from news websites and part of Wikipedia to personal blogs, covering both formal and informal written Japanese.
 
 The original English BERT model was trained on a 13GB corpus consisting of English Wikipedia and BooksCorpus. The size of raw text in our web-based corpus is 12GB, which is similar to the original one.
 
-### SentencePiece Model {#sentencepiece-model}
+<a name="sentencepiece-model"></a>
+
+### SentencePiece Model 
 
 [SentencePiece](https://github.com/google/sentencepiece) is used as the tokenizer. The parameters when training the sentencepiece model are as followings:
 
@@ -197,9 +219,13 @@ model_type = 'unigram' #default
 ctlsymbols = '[CLS],[SEP],[MASK]'
 ```
 
-### Pre-Training {#pre-training}
+<a name="pre-training"></a>
 
-#### Hyper-parameters {#hyper-parameters}
+### Pre-Training 
+
+<a name="hyper-parameters"></a>
+
+#### Hyper-parameters 
 
 The pre-training consists of two phases, in which the `train_batch_size` and `max_sequence_length` are changed.
 
@@ -222,6 +248,8 @@ num_train_steps = 3900000
 num_warmup_steps = 10000
 learning_rate = 1e-4
 ```
+
+<a name="hyper-parameters"></a>
 
 #### Environment {#environment}
 
