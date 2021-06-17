@@ -110,7 +110,7 @@ The original corpus is not devided in training, evaluation, and testing data. Th
 
 This process can be carried out by taking the following steps.
 
--   Download Livedoor news corpus from the <https://www.rondhuit.com/download/ldcc-20140209.tar.gz>. (It is stored under the text folder.)
+-   Download Livedoor news corpus. (It is stored under the text folder.)
 
 -   Store the text folder under the data folder.
 
