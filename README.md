@@ -249,9 +249,9 @@ num_warmup_steps = 10000
 learning_rate = 1e-4
 ```
 
-<a name="hyper-parameters"></a>
+<a name="environment></a>
 
-#### Environment {#environment}
+#### Environment 
 
 -   [Cloud TPU](https://cloud.google.com/tpu/) v3-8 on Google Cloud Platform
 -   tensorflow==1.13.0
