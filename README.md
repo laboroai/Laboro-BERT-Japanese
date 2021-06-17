@@ -3,34 +3,23 @@
 <!-- TOC -->
 
 -   [Introduction](#introduction)
-
     -   [About our BERT model](#about-our-bert-model)
     -   [How well is the performance](#how-well-is-the-performance)
     -   [To cite this work](#to-cite-this-work)
     -   [License](#license)
-
 -   [Fine-Tuning with Our Model](#fine-tuning-with-our-model)
-
     -   [Classification](#classification)
-
         -   [Dataset - Livedoor News Corpus](#dataset---livedoor-news-corpus)
         -   [Requirements](#req1)
         -   [To use the code](#code1)
-
     -   [Question Answering](#question-answering)
-
         -   [Dataset - Driving Domain QA](#dataset---driving-domain-qa)
         -   [Requirements](#req2)
         -   [To use the code](#code2)
-
 -   [About the Pre-Training of Our Model](#about-the-pre-training-of-our-model)
-
     -   [Corpus](#corpus)
-
     -   [SentencePiece Model](#sentencepiece-model)
-
     -   [Pre-Training](#pre-training)
-
         -   [Hyper-parameters](#hyper-parameters)
         -   [Environment](#environment)
 
