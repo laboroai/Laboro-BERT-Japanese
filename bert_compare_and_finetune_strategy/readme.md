@@ -2,7 +2,7 @@
 
 ## Introduction
 
-To fine-tune a BERT model means to adapt a general-purpose model to one specific down-stream NLP task. Any changes in the tokenizer and hyper-parameteres can influence the performance of the fine-tuned model. We compared 10 Japanese BERT models that are pre-trained using various pre-training hyper-parameters, implementations, and training corpora. We evaluated them all on three tasks and managed to summarize the fine-tuning strategy in order to take full advantage of the models and optimize their performance. We published [an article](∆) to introduce in details our strategy. It is worth reading if you have a pre-trained BERT model and want to get the most out of it.
+To fine-tune a BERT model means to adapt a general-purpose model to one specific down-stream NLP task. Any changes in the tokenizer and hyper-parameteres can influence the performance of the fine-tuned model. We compared 10 Japanese BERT models that are pre-trained using various pre-training hyper-parameters, implementations, and training corpora. We evaluated them all on three tasks and managed to summarize the fine-tuning strategy in order to take full advantage of the models and optimize their performance. We published [an article](https://laboro.ai/activity/column/engineer/to-get-the-best-out-of-a-bert-model/) to introduce in details our strategy. It is worth reading if you have a pre-trained BERT model and want to get the most out of it.
 
 This repository contains the scripts to utilize our fine-tuning strategy based on Transformers, and you can find the instruction for using the scripts in this document. We also include the comparison results of the 10 Japanese BERT models as the last section in this document.
 
