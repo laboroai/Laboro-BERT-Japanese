@@ -35,8 +35,8 @@ This Japanese BERT model was pre-trained with our own web corpus, on the basis o
 
    [base model with unigram tokenizer](http://assets.laboro.ai.s3.amazonaws.com/laborobert/webcorpus_base_model.zip)  
    [large model with unigram tokenizer](http://assets.laboro.ai.s3.amazonaws.com/laborobert/webcorpus_large_model.zip)  
-   [base model with BPE tokenizer](∆)  
-   [large model with BPE tokenizer](∆)
+   [base model with BPE tokenizer](http://assets.laboro.ai.s3.amazonaws.com/laboroparacorpus/webcorpus_base_bpe.zip)  
+   [large model with BPE tokenizer](http://assets.laboro.ai.s3.amazonaws.com/laboroparacorpus/webcorpus_large_bpe.zip)
 
 ### How well is the performance
 
