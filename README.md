@@ -89,7 +89,7 @@ In the evaluation of English BERT model in classification task, several datasets
 The original corpus is not devided in training, evaluation, and testing data. The dataset we provided in this repository was pre-processed based on Livedoor News Corpus in following steps: 
 * concatenating all of the data
 * shuffling randomly
-* deviding into train:dev:test = 2:2:6
+* deviding into train:dev:test = 6:2:2
 
 <a name="req1"></a>
 
